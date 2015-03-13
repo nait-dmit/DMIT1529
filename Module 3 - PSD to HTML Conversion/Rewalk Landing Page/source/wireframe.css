@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body {
+  margin: 20px;
+}
+
+body > * + * {
+  margin-top: 10px;
+}
+
+header,
+section,
+footer {
+  padding: 20px;
+  background: #d5d5d5;
+  border: 1px solid #c5c5c5;
+}
+
+.container {
+  padding: 20px;
+  background: #a0a4aa;
+  border: 1px solid #90949a;
+
+  width: 900px;
+  margin: 10px auto;
+}
+
+.container > * {
+  padding: 20px 10px;
+  background: #767b8b;
+  border: 1px solid #666b7b;
+}
+
+.container > * + * {
+  margin-top: 10px;
+
+}
+
+header h2 {
+  min-height: 100px;
+}
+
+button {
+  min-width: 100px;
+}
+
+.column {
+  margin-left: 0;
+  margin-right: 0;
+  padding: 60px 10px;
+  float: left;
+}
+
+.column + .column {
+  border-left: 0px;
+}
+
+.features .column,
+.statistics .column,
+footer .contact-nav {
+  width: 25%;
+}
+
+.clients .column,
+footer .primary-nav,
+footer .social-nav {
+  width: 16.666666667%;
+}
+
+footer form {
+  width: 41.6666667%
+}
+
+footer p {
+  clear: both;
+  margin-bottom: 0 !important;
+}
+
+footer .column {
+  margin-bottom: 10px;
+  margin-top: 0px;
+}
